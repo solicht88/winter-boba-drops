@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #B2D3DA;
+    font-family: "Afacad Flux", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.landing {
+    display: grid;
+    background-color: #81C8D8;
+    color: #15425F;
+    width: 50vw;
+    height: 50vh;
+    padding: 1.5rem;
+    grid-template-columns: 0.35fr 0.65fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    outline-style: solid;
+    outline-color: #15425F;
+    outline-width: 1rem;
+    animation: slide-in 0.7s linear 0s 1 normal;
+}
+
+.landing h1 {
+    font-size: 2.3rem;
+    animation: slide-in 0.9s linear 0s 1 normal;
+}
+
+.landing h2 {
+    font-size: 1.5rem;
+    animation: slide-in 0.75s linear 0s 1 normal;
+}
+
+.landing p {
+    font-size: 1.25rem;
+}
+
+#p1 {
+    animation: slide-in 0.7s linear 0s 1 normal;
+}
+
+#p2 {
+    animation: slide-in 0.65s linear 0s 1 normal;
+}
+
+#ice-kirb {
+    height: 218px;
+    width: 176.5px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    animation: slide-in 0.7s linear 0s 1 normal;
+    position: relative;
+}
+
+.snowflakes {
+    display: grid;
+    position: absolute;
+    width: 100vw;
+    align-self: start;
+    grid-template-columns: 1fr 7vw 1fr 3vw 1fr 5vw 1fr 8vw 1fr 3vw 1fr 6vw 1fr 4vw 1fr;
+    grid-template-rows: 1fr;
+}
+
+#snow-1 {
+    height: 7vw;
+    width: 7vw;
+    grid-column: 2;
+    animation: snow-fall 5.2s linear 0s infinite normal;
+}
+
+#snow-2 {
+    height: 3vw;
+    width: 3vw;
+    grid-column: 4;
+    animation: snow-fall 5.5s linear 0s infinite normal;
+}
+
+#snow-3 {
+    height: 5vw;
+    width: 5vw;
+    grid-column: 6;
+    animation: snow-fall 4.2s linear 0s infinite normal;
+}
+
+#snow-4 {
+    height: 8vw;
+    width: 8vw;
+    grid-column: 8;
+    animation: snow-fall 3.8s linear 0s infinite normal;
+}
+
+#snow-5 {
+    height: 3vw;
+    width: 3vw;
+    grid-column: 10;
+    animation: snow-fall 5.9s linear 0s infinite normal;
+}
+
+#snow-6 {
+    height: 6vw;
+    width: 6vw;
+    grid-column: 12;
+    animation: snow-fall 4.8s linear 0s infinite normal;
+}
+
+#snow-7 {
+    height: 4vw;
+    width: 4vw;
+    grid-column: 14;
+    animation: snow-fall 4.5s linear 0s infinite normal;
+}
+
+@keyframes slide-in {
+    0% {
+        margin-top: -25vh;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0vh;
+        opacity: 1;
+    }
+}
+
+@keyframes snow-fall {
+    0% {
+        margin-top: -15vh;
+    }
+
+    100% {
+        margin-top: 120vh;
+    }
+}
